@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding: 3rem 5rem;
+}
+
+h3 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}

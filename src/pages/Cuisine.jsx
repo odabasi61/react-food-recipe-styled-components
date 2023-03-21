@@ -1,7 +1,8 @@
-import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Cuisine = () => {
-  return <div></div>;
+  return <div>cuisine</div>;
 };
 
 export default Cuisine;
