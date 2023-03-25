@@ -45,9 +45,11 @@ const Popular = () => {
             return (
               <SplideSlide key={recipe.id}>
                 <Card>
+                  <Link to={'/recipe/' + recipe.id}>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
                   <Gradient />
+                  </Link>
                 </Card>
               </SplideSlide>
             );

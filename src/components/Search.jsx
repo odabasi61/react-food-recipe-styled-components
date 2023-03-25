@@ -10,6 +10,7 @@ const Search = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     navigate("/searched/" + search);
+    setSearch('');
   };
 
   return (
@@ -27,11 +28,11 @@ const Search = () => {
 };
 
 const FormStyle = styled.form`
-  margin: 0 20rem;
-
+  
   div {
     width: 100%;
     position: relative;
+    text-align: center;
   }
 
   input {
@@ -42,13 +43,15 @@ const FormStyle = styled.form`
     padding: 1rem 3rem;
     border-radius: 1rem;
     outline: none;
-    width: 100%;
+    width: 80%;
+
+
   }
 
   svg {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 10%;
     transform: translate(100%, -50%);
     color: white;
   }
