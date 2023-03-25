@@ -8,7 +8,7 @@ const Search = () => {
   const navigate = useNavigate();
 
   const submitHandler = (e) => {
-    e.prevent.default();
+    e.preventDefault();
     navigate("/searched/" + search);
   };
 
@@ -17,7 +17,7 @@ const Search = () => {
       <div>
         <FaSearch />
         <input
-          type="text"
+          type="search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
