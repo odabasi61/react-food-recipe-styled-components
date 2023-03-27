@@ -34,20 +34,36 @@ const Veggie = () => {
         <h3>Our Vegetarian Picks</h3>
         <Splide
           options={{
-            perPage: 3,
-            arrows: false,
-            pagination: false,
+            breakpoints: {
+              800: {
+                perPage: 1,
+              },
+              1200: {
+                perPage: 2,
+              },
+              1600: {
+                perPage: 3,
+              },
+              2000: {
+                perPage: 4,
+              },
+              4000: {
+                perPage: 5,
+              },
+            },
+            arrows: true,
+            pagination: true,
             drag: "free",
-            gap: "5rem",
+            gap: "2rem",
           }}
         >
           {veggie.map((recipe) => {
             return (
               <SplideSlide key={recipe.id}>
                 <Card>
-                  <Link to={'/recipe/' + recipe.id}>
-                  <p>{recipe.title}</p>
-                  <img src={recipe.image} alt={recipe.title} />
+                  <Link to={"/recipe/" + recipe.id}>
+                    <p>{recipe.title}</p>
+                    <img src={recipe.image} alt={recipe.title} />
                     <Gradient />
                   </Link>
                 </Card>

@@ -34,21 +34,37 @@ const Popular = () => {
         <h3>Popular Picks</h3>
         <Splide
           options={{
-            perPage: 4,
-            arrows: false,
-            pagination: false,
+            breakpoints: {
+              600: {
+                perPage: 1,
+              },
+              1000: {
+                perPage: 2,
+              },
+              1400: {
+                perPage: 3,
+              },
+              1800: {
+                perPage: 4,
+              },
+              4000: {
+                perPage: 5,
+              },
+            },
+            arrows: true,
+            pagination: true,
             drag: "free",
-            gap: "5rem",
+            gap: "2rem",
           }}
         >
           {popular.map((recipe) => {
             return (
               <SplideSlide key={recipe.id}>
                 <Card>
-                  <Link to={'/recipe/' + recipe.id}>
-                  <p>{recipe.title}</p>
-                  <img src={recipe.image} alt={recipe.title} />
-                  <Gradient />
+                  <Link to={"/recipe/" + recipe.id}>
+                    <p>{recipe?.title}</p>
+                    <img src={recipe?.image} alt={recipe?.title} />
+                    <Gradient />
                   </Link>
                 </Card>
               </SplideSlide>
