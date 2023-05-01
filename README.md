@@ -1,4 +1,4 @@
-In this sammple food recipe project, i used styled components for styling. I also used react-router-dom and react icons. In this project the recipes of the food is fetched from a private websites api. The searchbar is working. I used framer motion for the carousel.
+I cloned this project from a youtube channel to develope myself in react. In this sample food recipe project, i used styled components for styling. I also used react-router-dom and react icons. In this project the recipes of the food is fetched from a private websites api. The searchbar is working. I used framer motion for the carousel.
 
 https://euphonious-hotteok-0bba55.netlify.app/
 
